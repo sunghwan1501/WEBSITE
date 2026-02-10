@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-// @ 별칭을 사용하여 src 폴더를 기준으로 경로를 잡습니다.
+// @ 별칭을 사용하여 경로 에러를 방지합니다.
 import HomePage from "@/pages/home/page"; 
 import AboutPage from "@/pages/about/AboutPage"; 
 import PrintMethodPage from "@/pages/print-method/PrintMethodPage";
@@ -9,7 +9,7 @@ import NotFound from "@/pages/print-method/NotFound";
 
 function App() {
   return (
-    // GitHub Pages 주소인 /website/와 일치시킵니다.
+    // GitHub Pages 주소인 /website/와 맞춰야 합니다.
     <BrowserRouter basename="/website">
       <Routes>
         <Route path="/" element={<HomePage />} />
